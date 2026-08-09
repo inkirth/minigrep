@@ -23,6 +23,3 @@ IGNORE_CASE=1 cargo run -- search_string target_file.txt
 
 ```
 
-```
-
-```
