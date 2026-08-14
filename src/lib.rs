@@ -28,7 +28,11 @@ safe, fast, productive.
 Pick three.
 Duct tape.";
 
-        assert_eq!(vec!["safe, fast, productive."], search(query, contents));
+        // Add .collect::<Vec<_>>() to the end of the search call
+        assert_eq!(
+            vec!["safe, fast, productive."], 
+            search(query, contents).collect::<Vec<_>>()
+        );
     }
 
     #[test]
@@ -40,9 +44,10 @@ safe, fast, productive.
 Pick three.
 Trust me.";
 
+        // Add .collect::<Vec<_>>() to the end of the search call
         assert_eq!(
             vec!["Rust:", "Trust me."],
-            search_case_insensitive(query, contents)
+            search_case_insensitive(query, contents).collect::<Vec<_>>()
         );
-    }
+    }   
 }
