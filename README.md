@@ -1,4 +1,3 @@
-
 # minigrep
 
 Minigrep is a lightweight command-line search tool built in Rust. It is a simplified implementation of the classic grep utility, developed by following Chapter 12 of "The Rust Programming Language" book. This project serves as a practical demonstration of core Rust concepts, including file I/O, error handling, environment variables, and test-driven development.
@@ -22,4 +21,3 @@ Minigrep supports case-insensitive searching controlled by environment variables
 IGNORE_CASE=1 cargo run -- search_string target_file.txt
 
 ```
-
